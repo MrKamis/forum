@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #fff;
+}
+.centering {
+    float: left;
+    width: 10%;
+    opacity: 0;
+}
+.anotherDiv {
+    float: left;
+    width: 80%;
+}
+@media only screen and (max-width: 678px) {
+    .centering {
+        width: 0px;
+    }
+    .anotherDiv {
+        width: 100%;
+    }
+}
+.banner {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px double #fff;
+}
+.navBar {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+        margin-right: 10px;
+        width: auto;
+        padding: 0 5px 0 5px;
+        cursor: pointer;
+        &:hover {
+            color: #ffa;
+        }
+    }
+}
+.kategorie {
+    .kategoria {
+            border: 1px solid #fff;
+            padding: 5px 3px 5px 3px;
+            .title {
+                font-weight: bold;
+                &:hover {
+                    cursor: pointer;
+                    color : #ffa;
+                }
+            }
+            .last {
+                display: block;
+                font-size: 80%;
+                &:hover {
+                    cursor: pointer;
+                    color: #ffa;
+                }
+            }
+            .data {
+                font-size: 75%;
+                float: right;
+            }
+    }
+    .dodajKategorie {
+        width: 100%;
+        text-align: right;
+        margin-top: 5px;
+        .przycisk {
+            width: auto;
+            cursor: pointer;
+            background-color: #002;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            &:hover {
+                color: #ffa;
+            }
+        }
+    }
+}

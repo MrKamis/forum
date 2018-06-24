@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="forum">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forum</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="dist/index.js"></script>
+    <link rel="stylesheet" href="dist/index.css">
+</head>
+<body ng-controller="main">
+    <div class="centering">
+        <!-- CENTERING -->
+        TEST
+    </div>
+    <div class="anotherDiv">
+        <!-- MAIN DIV -->
+        <a href="index.htm" class="banner">
+            Forum
+        </a>
+        <div class="navBar">
+            <span ng-click="zmienStrone('strona_glowna')">Strona główna</span>
+            <span ng-click="zmienStrone('statystyki')">Statystyki</span>
+            <span ng-hide="logged">
+                <span ng-click="zmienStrone('logowanie')">Zaloguj</span>
+            </span>
+            <span ng-show="logged">
+                <span ng-click="zmienStrone('profil')">Profil</span>
+                <span ng-click="wyloguj()">Wyloguj</span>
+            </span>
+        </div>
+        <div ng-switch="strona">
+            <div ng-switch-when="strona_glowna">
+                <div class="kategorie">
+                    <div class="kategoria">
+                        <span class="title">Pierwsza kategoria</span>
+                        <span class="data">
+                            09.12.1999
+                        </span>
+                        <span class="last">mrkamis</span>
+                    </div>
+                    <div class="kategoria">
+                        <span class="title">Pierwsza kategoria</span>
+                        <span class="data">
+                            09.12.1999
+                        </span>
+                        <span class="last">mrkamis</span>
+                    </div>
+                    <div class="kategoria">
+                        <span class="title">Pierwsza kategoria</span>
+                        <span class="data">
+                            09.12.1999
+                        </span>
+                        <span class="last">mrkamis</span>
+                    </div>
+                    <div class="kategoria">
+                        <span class="title">Pierwsza kategoria</span>
+                        <span class="data">
+                            09.12.1999
+                        </span>
+                        <span class="last">mrkamis</span>
+                    </div>
+                    <div class="dodajKategorie">
+                        <span class="przycisk">
+                            Dodaj kategorie
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
