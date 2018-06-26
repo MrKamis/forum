@@ -50,6 +50,9 @@ body {
 .navBar span:hover {
   color: #ffa;
 }
+.navBar .test:hover {
+  color: #fff;
+}
 .kategorie .kategoria {
   border: 1px solid #fff;
   padding: 5px 3px 5px 3px;
@@ -88,4 +91,88 @@ body {
 }
 .kategorie .dodajKategorie .przycisk:hover {
   color: #ffa;
+}
+.loginForm {
+  float: left;
+  width: 50%;
+  border-left: 3px solid #fff;
+  padding: 10px;
+  line-height: 30px;
+}
+.loginForm input {
+  border-radius: 3px;
+}
+.loginForm button {
+  border-radius: 3px;
+  padding: 3px;
+  display: block;
+}
+.registerForm {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  line-height: 30px;
+  border-left: 3px solid #fff;
+}
+.registerForm input {
+  border-radius: 3px;
+}
+.registerForm button {
+  border-radius: 3px;
+  padding: 3px;
+}
+.registerForm label {
+  display: block;
+}
+.alert {
+  padding: 5px;
+  border-radius: 3px;
+  opacity: 0.89;
+  text-align: center;
+}
+.dodajKategorieOkno {
+  width: 100%;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+.dodajKategorieOkno div {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  opacity: 1;
+  color: #000;
+  height: 100%;
+  padding: 30px;
+}
+.dodajKategorieOkno div input {
+  border-radius: 3px;
+  padding: 3px;
+}
+.dodajKategorieOkno .przycisk {
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid #000;
+  padding: 4px;
+  display: block;
+  width: auto;
+}
+.dodajKategorieOkno .przycisk:hover {
+  background-color: #ffa;
+  cursor: pointer;
+}
+.dodajKategorieOkno .bar {
+  width: 100%;
+  padding: 0;
+  border-radius: 5px;
+  text-align: right;
+}
+.dodajKategorieOkno .bar span {
+  padding: 5px;
+}
+.dodajKategorieOkno .bar span:hover {
+  background-color: #ffa;
+  cursor: pointer;
 }
